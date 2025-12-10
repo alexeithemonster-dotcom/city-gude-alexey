@@ -1,0 +1,13 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Dependencies (на всякий случай)
+node_modules/
+
+# Temp files
+*.swp
