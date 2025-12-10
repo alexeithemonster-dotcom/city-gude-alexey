@@ -1,0 +1,209 @@
+:root {
+  --blue: #4fc3f7;
+  --blue-dark: #0288d1;
+  --footer-dark: #111827;
+  --bg: #f4faff;
+  --text: #1f2937;
+  --card-bg: #ffffff;
+  --border: #dbeafe;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* 🌊 Header */
+.site-header {
+  background: linear-gradient(90deg, var(--blue), var(--blue-dark));
+  padding: 1.5rem 0;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.site-header h1 {
+  margin: 0 0 0.5rem;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+
+.nav a:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+/* Main */
+main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+/* ✨ Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 1.4rem;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* 🖼 Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 18px;
+}
+
+/* ✅ Simple beautiful tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+th {
+  background: #ecfeff;
+  text-align: left;
+  padding: 14px;
+  color: #0369a1;
+}
+
+td {
+  padding: 14px;
+  border-top: 1px solid var(--border);
+}
+
+tr:hover td {
+  background: #f0f9ff;
+}
+
+/* 📩 Form */
+.contact-form {
+  display: grid;
+  gap: 14px;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: var(--blue);
+  outline: none;
+}
+
+/* 🟦 Красивая кнопка */
+.contact-form button {
+  background: linear-gradient(90deg, #4fc3f7, #0288d1);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+/* 🗺 Стили для карты */
+.map-image {
+  width: 50%;
+  max-width: 700px;
+  margin-top: 16px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  display: block;
+}
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  opacity: 0.95;
+}
+
+.contact-form button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* 🌙 Footer */
+.site-footer {
+  background: var(--footer-dark);
+  color: #e5e7eb;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-icon {
+  font-size: 20px;
+}
+<!-- Updated styles page -->

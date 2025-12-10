@@ -1,0 +1,48 @@
+/* Дополнительные медиа-запросы (в сумме >=3) */
+
+/* 1) Большие экраны — дополнительные отступы */
+@media (min-width: 1200px){
+  .container{padding:3rem 0;}
+  .card img{height:200px;}
+  .gallery-grid img{height:220px;}
+.styles-page img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;}
+
+}
+
+/* 2) Планшеты */
+@media (max-width: 900px){
+  .nav{gap:0.5rem;font-size:0.95rem;}
+  .gallery-grid figure img{height:180px;}
+.styles-page img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;}
+}
+
+/* 3) Мобильные телефоны */
+@media (max-width: 480px){
+  .site-header h1{font-size:1.05rem;}
+  .gallery-grid{grid-template-columns:1fr;}
+  .gallery-grid img{height:160px;}
+  .styles-page img {width: 100%;height: auto;max-height: 250px;}
+  .styles-page .cards {display: flex;flex-direction: column;gap: 15px;}
+  .styles-page .cards img {width: 100%;height: auto;border-radius: 10px;object-fit: cover;}
+  .styles-page table {width: 100%;display: block;overflow-x: auto;white-space: nowrap;font-size: 14px;}
+  .styles-page th,
+  .styles-page td {padding: 8px;}
+}
+
+
+/* ===== Таблица только на странице "Стили" ===== */
+@media (max-width: 600px) {
+
+}
