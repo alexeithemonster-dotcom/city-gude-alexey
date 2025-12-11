@@ -29,7 +29,7 @@
 
 
 \## Скриншот главной страницы
-<img width="1920" height="1140" alt="Главная" src="https://github.com/user-attachments/assets/22bf8966-7a39-404f-a4ff-1d92d93b90e3" />
+<img width="1841" height="1036" alt="index" src="https://github.com/user-attachments/assets/ba133bb7-4332-4d93-95c9-acebf0bbb035" />
 
 
 
@@ -44,6 +44,7 @@
 git clone https://github.com/alexeithemonster-dotcom/city-gude-alexey.git
 
 ```
+
 
 
 
