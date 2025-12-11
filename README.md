@@ -1,4 +1,4 @@
-\# Моё хобби — Плавание 🏊‍♀️
+\## Моё хобби — Плавание 🏊‍♀️
 
 
 
@@ -29,8 +29,7 @@
 
 
 \## Скриншот главной страницы
-
-<img width="1841" height="1036" alt="Главная страница" src="C:\Users\alexe\Desktop\index.png" />
+<img width="1920" height="1140" alt="Главная" src="https://github.com/user-attachments/assets/22bf8966-7a39-404f-a4ff-1d92d93b90e3" />
 
 
 
@@ -45,6 +44,7 @@
 git clone https://github.com/alexeithemonster-dotcom/city-gude-alexey.git
 
 ```
+
 
 
 
