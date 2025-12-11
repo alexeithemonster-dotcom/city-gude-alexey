@@ -28,11 +28,23 @@
 
 
 
+\## Скриншот главной страницы
+
+<img width="1841" height="1036" alt="Главная страница" src="C:\Users\alexe\Desktop\index.png" />
+
+
+
 \## Как запустить
 
-Открыть файл index.html в браузере.
+1\. Клонировать репозиторий:
 
 
+
+```bash
+
+git clone https://github.com/alexeithemonster-dotcom/city-gude-alexey.git
+
+```
 
 
 
