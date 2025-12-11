@@ -1,48 +1,94 @@
-/* Дополнительные медиа-запросы (в сумме >=3) */
+@media (min-width: 1200px){                        /* Активируется при ширине окна ≥1200px */
+  
+  .container {                                     /* Основной контейнер */
+    padding: 3rem 0;                               /* Увеличенные вертикальные отступы */
+  }
 
-/* 1) Большие экраны — дополнительные отступы */
-@media (min-width: 1200px){
-  .container{padding:3rem 0;}
-  .card img{height:200px;}
-  .gallery-grid img{height:220px;}
-.styles-page img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-  object-fit: cover;}
+  .card img {                                      /* Изображения внутри карточек */
+    height: 200px;                                 /* Фиксированная высота для ровных карточек */
+  }
+
+  .gallery-grid img {                              /* Изображения в галерее */
+    height: 220px;                                 /* Чуть выше для больших экранов */
+  }
+
+  .styles-page img {                               /* Фото на странице "Стили" */
+    width: 100%;                                   /* Картинка растягивается на всю ширину */
+    max-width: 100%;                               /* Но не превышает размеры контейнера */
+    height: auto;                                  /* Автоматически сохраняет пропорции */
+    display: block;                                /* Блочное отображение — убирает лишние пробелы */
+    border-radius: 12px;                           /* Округление углов */
+    object-fit: cover;                             /* Масштабирование без искажений */
+  }
 
 }
 
-/* 2) Планшеты */
-@media (max-width: 900px){
-  .nav{gap:0.5rem;font-size:0.95rem;}
-  .gallery-grid figure img{height:180px;}
-.styles-page img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-  object-fit: cover;}
+@media (max-width: 900px){                         /* Активируется при ширине окна ≤900px */
+
+  .nav {                                           /* Навигационное меню */
+    gap: 0.5rem;                                   /* Уменьшаем расстояние между ссылками */
+    font-size: 0.95rem;                            /* Чуть уменьшаем шрифт */
+  }
+
+  .gallery-grid figure img {                       /* Фото в галерее */
+    height: 180px;                                 /* Уменьшаем высоту под планшеты */
+  }
+
+  .styles-page img {                               /* Картинки на странице "Стили" */
+    width: 100%;                                   /* На всю доступную ширину */
+    max-width: 100%;                               /* Не вылезают за пределы контейнера */
+    height: auto;                                  /* Пропорции сохраняются */
+    display: block;                                /* Убирает пробелы под картинкой */
+    border-radius: 12px;                           /* Скруглённые углы */
+    object-fit: cover;                             /* Масштабирование без искажений */
+  }
+
 }
 
-/* 3) Мобильные телефоны */
-@media (max-width: 480px){
-  .site-header h1{font-size:1.05rem;}
-  .gallery-grid{grid-template-columns:1fr;}
-  .gallery-grid img{height:160px;}
-  .styles-page img {width: 100%;height: auto;max-height: 250px;}
-  .styles-page .cards {display: flex;flex-direction: column;gap: 15px;}
-  .styles-page .cards img {width: 100%;height: auto;border-radius: 10px;object-fit: cover;}
-  .styles-page table {width: 100%;display: block;overflow-x: auto;white-space: nowrap;font-size: 14px;}
+@media (max-width: 480px){                         /* Активируется при ширине окна ≤480px */
+
+  .site-header h1 {                                /* Заголовок сайта в шапке */
+    font-size: 1.05rem;                            /* Делаем меньше, чтобы влезал в экран */
+  }
+
+  .gallery-grid {                                   /* Сетка галереи */
+    grid-template-columns: 1fr;                     /* 1 колонка → фото идут столбиком */
+  }
+
+  .gallery-grid img {                               /* Фото в мобильной галерее */
+    height: 160px;                                   /* Небольшая высота под экран телефона */
+  }
+
+  .styles-page img {                                 /* Картинки на странице "Стили" */
+    width: 100%;                                     /* Фото занимает всю ширину */
+    height: auto;                                    /* Без искажений */
+    max-height: 250px;                               /* Ограничение высоты */
+  }
+
+  .styles-page .cards {                              /* Контейнер карточек на странице */
+    display: flex;                                   /* Переключаем на флекс-режим */
+    flex-direction: column;                          /* Все карточки идут столбиком */
+    gap: 15px;                                       /* Расстояние между карточками */
+  }
+
+  .styles-page .cards img {                          /* Фото внутри карточек */
+    width: 100%;                                     /* На всю ширину */
+    height: auto;                                    /* Автоматическая высота */
+    border-radius: 10px;                             /* Легкое скругление */
+    object-fit: cover;                               /* Красивое заполнение области */
+  }
+
+  .styles-page table {                               /* Таблица на странице "Стили" */
+    width: 100%;                                     /* Таблица занимает всю ширину */
+    display: block;                                  /* Переводим в блочный режим */
+    overflow-x: auto;                                /* Включаем прокрутку, если не помещается */
+    white-space: nowrap;                             /* Строки не переносятся */
+    font-size: 14px;                                 /* Чуть меньше текст */
+  }
+
   .styles-page th,
-  .styles-page td {padding: 8px;}
-}
-
-
-/* ===== Таблица только на странице "Стили" ===== */
-@media (max-width: 600px) {
+  .styles-page td {                                  /* Ячейки таблицы */
+    padding: 8px;                                     /* Уменьшенные отступы */
+  }
 
 }
